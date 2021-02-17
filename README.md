@@ -63,9 +63,9 @@ DEVELOPING
 ## TODOs
 Total Tasks : `167`
 
-Completed Tasks : `33`
+Completed Tasks : `42`
 
-Progress : `19.76%`
+Progress : `25.14%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
@@ -120,15 +120,15 @@ Progress : `19.76%`
   - [x] Owner
 - [ ] Register middleware on kernel
 - [ ] Assign middleware on route
-- [ ] Create base requests
-  - [ ] LoginRequest
-  - [ ] RegisterRequest
-  - [ ] StoreAccountRequest
-  - [ ] StoreAddressRequest
-  - [ ] StoreProductRequest
-  - [ ] UpdateAccountRequest
-  - [ ] UpdateAddressRequest
-  - [ ] UpdateProductRequest
+- [x] Create base requests
+  - [x] LoginRequest
+  - [x] RegisterRequest
+  - [x] StoreAccountRequest
+  - [x] StoreAddressRequest
+  - [x] StoreProductRequest
+  - [x] UpdateAccountRequest
+  - [x] UpdateAddressRequest
+  - [x] UpdateProductRequest
 - [ ] Create traits
   - [ ] FailedFormValidation
   - [ ] SerializeDate
