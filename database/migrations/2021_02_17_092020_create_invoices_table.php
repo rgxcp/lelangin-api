@@ -14,7 +14,14 @@ class CreateInvoicesTable extends Migration
     public function up()
     {
         Schema::create('invoices', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->foreignId('seller')->constrained('users');
+            $table->foreignId('buyer')->constrained('users');
+            $table->foreignId('address_id')->constrained();
+            $table->foreignId('product_id')->constrained();
+            $table->dateTime('winned_at');
+            $table->boolean('winned_as_buyout')->default(false);
+            $table->unsignedInteger('winned_at_price');
             $table->timestamps();
         });
     }
