@@ -9,6 +9,18 @@ use Illuminate\Http\Request;
 class AccountController extends Controller
 {
     /**
+     * Instantiate a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('json.header');
+        $this->middleware('auth:sanctum');
+        $this->middleware('owner')->only('update');
+    }
+
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
