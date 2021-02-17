@@ -63,9 +63,9 @@ DEVELOPING
 ## TODOs
 Total Tasks : `170`
 
-Completed Tasks : `68`
+Completed Tasks : `69`
 
-Progress : `40%`
+Progress : `40.58%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
@@ -135,7 +135,7 @@ Progress : `40%`
   - [x] `DELETE` Delete product
 - [x] Assign middleware on controllers
 - [ ] Fill base migrations
-  - [ ] users
+  - [x] users
   - [ ] addresses
   - [ ] banks
   - [ ] accounts
