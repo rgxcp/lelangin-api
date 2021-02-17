@@ -63,9 +63,9 @@ DEVELOPING
 ## TODOs
 Total Tasks : `167`
 
-Completed Tasks : `30`
+Completed Tasks : `33`
 
-Progress : `17.96%`
+Progress : `19.76%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
@@ -115,9 +115,9 @@ Progress : `17.96%`
   - [ ] `PUT` Update address
   - [ ] `PUT` Update product
   - [ ] `DELETE` Delete product
-- [ ] Create base middleware
-  - [ ] JSONHeader
-  - [ ] Owner
+- [x] Create base middleware
+  - [x] JSONHeader
+  - [x] Owner
 - [ ] Register middleware on kernel
 - [ ] Assign middleware on route
 - [ ] Create base requests
