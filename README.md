@@ -61,11 +61,11 @@ DEVELOPING
 | `api/v1/products/{product}` | Delete product |
 
 ## TODOs
-Total Tasks : `167`
+Total Tasks : `168`
 
-Completed Tasks : `43`
+Completed Tasks : `44`
 
-Progress : `25.74%`
+Progress : `26.19%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
@@ -119,6 +119,7 @@ Progress : `25.74%`
   - [x] JSONHeader
   - [x] Owner
 - [x] Register middleware on kernel
+- [x] Configure middleware priority on kernel
 - [ ] Assign middleware on route
 - [x] Create base requests
   - [x] LoginRequest
