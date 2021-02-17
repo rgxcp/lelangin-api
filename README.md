@@ -63,16 +63,16 @@ DEVELOPING
 ## TODOs
 Total Tasks : `167`
 
-Completed Tasks : `5`
+Completed Tasks : `6`
 
-Progress : `2.99%`
+Progress : `3.59%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
 - [x] Change app timezone & locale to Indonesian
 - [x] Install auth package (Sanctum)
 - [x] Log SQL queries
-- [ ] Handle AuthenticationException class
+- [x] Handle AuthenticationException class
 - [ ] Handle NotFoundHttpException class
 - [ ] Create base migrations
   - [ ] users
