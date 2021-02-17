@@ -61,11 +61,11 @@ DEVELOPING
 | `api/v1/products/{product}` | Delete product |
 
 ## TODOs
-Total Tasks : `168`
+Total Tasks : `170`
 
-Completed Tasks : `47`
+Completed Tasks : `66`
 
-Progress : `27.97%`
+Progress : `38.82%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
@@ -97,6 +97,7 @@ Progress : `27.97%`
   - [x] InvoiceController
   - [x] ProductController
   - [x] UserController
+  - [x] UserProductController
 - [x] Create base middleware
   - [x] JSONHeader
   - [x] Owner
@@ -114,24 +115,24 @@ Progress : `27.97%`
 - [x] Create traits
   - [x] FailedFormValidation
   - [x] SerializeDate
-- [ ] Create endpoints
-  - [ ] `GET` Show accounts
-  - [ ] `GET` Show addresses
-  - [ ] `GET` Show invoices
-  - [ ] `GET` Show invoice detail
-  - [ ] `GET` Show products
-  - [ ] `GET` Show product detail
-  - [ ] `GET` Show user detail
-  - [ ] `GET` Show user products
-  - [ ] `POST` Create account
-  - [ ] `POST` Create address
-  - [ ] `POST` Create product
-  - [ ] `POST` Register
-  - [ ] `POST` Login
-  - [ ] `PUT` Update account
-  - [ ] `PUT` Update address
-  - [ ] `PUT` Update product
-  - [ ] `DELETE` Delete product
+- [x] Create endpoints
+  - [x] `GET` Show accounts
+  - [x] `GET` Show addresses
+  - [x] `GET` Show invoices
+  - [x] `GET` Show invoice detail
+  - [x] `GET` Show products
+  - [x] `GET` Show product detail
+  - [x] `GET` Show user detail
+  - [x] `GET` Show user products
+  - [x] `POST` Create account
+  - [x] `POST` Create address
+  - [x] `POST` Create product
+  - [x] `POST` Register
+  - [x] `POST` Login
+  - [x] `PUT` Update account
+  - [x] `PUT` Update address
+  - [x] `PUT` Update product
+  - [x] `DELETE` Delete product
 - [ ] Assign middleware on route
 - [ ] Fill base migrations
   - [ ] users
@@ -233,5 +234,6 @@ Progress : `27.97%`
     - [ ] `destroy()`
   - [ ] UserController
     - [ ] `show()`
-    - [ ] `products()`
+  - [ ] UserProductController
+    - [ ] `index()`
 - [ ] Translate English locale to Indonesian
