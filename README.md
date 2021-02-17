@@ -63,9 +63,9 @@ DEVELOPING
 ## TODOs
 Total Tasks : `167`
 
-Completed Tasks : `6`
+Completed Tasks : `7`
 
-Progress : `3.59%`
+Progress : `4.19%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
@@ -73,7 +73,7 @@ Progress : `3.59%`
 - [x] Install auth package (Sanctum)
 - [x] Log SQL queries
 - [x] Handle AuthenticationException class
-- [ ] Handle NotFoundHttpException class
+- [x] Handle NotFoundHttpException class
 - [ ] Create base migrations
   - [ ] users
   - [ ] addresses
