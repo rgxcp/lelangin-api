@@ -97,6 +97,23 @@ Progress : `27.97%`
   - [x] InvoiceController
   - [x] ProductController
   - [x] UserController
+- [x] Create base middleware
+  - [x] JSONHeader
+  - [x] Owner
+- [x] Register middleware on kernel
+- [x] Configure middleware priority on kernel
+- [x] Create base requests
+  - [x] LoginRequest
+  - [x] RegisterRequest
+  - [x] StoreAccountRequest
+  - [x] StoreAddressRequest
+  - [x] StoreProductRequest
+  - [x] UpdateAccountRequest
+  - [x] UpdateAddressRequest
+  - [x] UpdateProductRequest
+- [x] Create traits
+  - [x] FailedFormValidation
+  - [x] SerializeDate
 - [ ] Create endpoints
   - [ ] `GET` Show accounts
   - [ ] `GET` Show addresses
@@ -115,24 +132,7 @@ Progress : `27.97%`
   - [ ] `PUT` Update address
   - [ ] `PUT` Update product
   - [ ] `DELETE` Delete product
-- [x] Create base middleware
-  - [x] JSONHeader
-  - [x] Owner
-- [x] Register middleware on kernel
-- [x] Configure middleware priority on kernel
 - [ ] Assign middleware on route
-- [x] Create base requests
-  - [x] LoginRequest
-  - [x] RegisterRequest
-  - [x] StoreAccountRequest
-  - [x] StoreAddressRequest
-  - [x] StoreProductRequest
-  - [x] UpdateAccountRequest
-  - [x] UpdateAddressRequest
-  - [x] UpdateProductRequest
-- [x] Create traits
-  - [x] FailedFormValidation
-  - [x] SerializeDate
 - [ ] Fill base migrations
   - [ ] users
   - [ ] addresses
