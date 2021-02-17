@@ -63,9 +63,9 @@ DEVELOPING
 ## TODOs
 Total Tasks : `167`
 
-Completed Tasks : `7`
+Completed Tasks : `15`
 
-Progress : `4.19%`
+Progress : `8.98%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
@@ -74,14 +74,14 @@ Progress : `4.19%`
 - [x] Log SQL queries
 - [x] Handle AuthenticationException class
 - [x] Handle NotFoundHttpException class
-- [ ] Create base migrations
-  - [ ] users
-  - [ ] addresses
-  - [ ] banks
-  - [ ] accounts
-  - [ ] products
-  - [ ] images
-  - [ ] invoices
+- [x] Create base migrations
+  - [x] users
+  - [x] addresses
+  - [x] banks
+  - [x] accounts
+  - [x] products
+  - [x] images
+  - [x] invoices
 - [ ] Create base models
   - [ ] Account
   - [ ] Address
