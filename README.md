@@ -63,12 +63,12 @@ DEVELOPING
 ## TODOs
 Total Tasks : `167`
 
-Completed Tasks : `1`
+Completed Tasks : `2`
 
-Progress : `0.59%`
+Progress : `1.19%`
 
 - [x] Configure app `.env`
-- [ ] Configure app filesystem driver
+- [x] Configure app filesystem driver
 - [ ] Change app timezone & locale to Indonesian
 - [ ] Install auth package (Sanctum)
 - [ ] Log SQL queries
