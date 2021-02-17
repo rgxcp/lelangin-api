@@ -63,9 +63,9 @@ DEVELOPING
 ## TODOs
 Total Tasks : `167`
 
-Completed Tasks : `23`
+Completed Tasks : `30`
 
-Progress : `13.77%`
+Progress : `17.96%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
@@ -90,13 +90,13 @@ Progress : `13.77%`
   - [x] Invoice
   - [x] Product
   - [x] User
-- [ ] Create base controllers
-  - [ ] AccountController
-  - [ ] AddressController
-  - [ ] AuthController
-  - [ ] InvoiceController
-  - [ ] ProductController
-  - [ ] UserController
+- [x] Create base controllers
+  - [x] AccountController
+  - [x] AddressController
+  - [x] AuthController
+  - [x] InvoiceController
+  - [x] ProductController
+  - [x] UserController
 - [ ] Create endpoints
   - [ ] `GET` Show accounts
   - [ ] `GET` Show addresses
