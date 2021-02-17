@@ -63,9 +63,9 @@ DEVELOPING
 ## TODOs
 Total Tasks : `168`
 
-Completed Tasks : `44`
+Completed Tasks : `45`
 
-Progress : `26.19%`
+Progress : `26.78%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
@@ -131,7 +131,7 @@ Progress : `26.19%`
   - [x] UpdateAddressRequest
   - [x] UpdateProductRequest
 - [ ] Create traits
-  - [ ] FailedFormValidation
+  - [x] FailedFormValidation
   - [ ] SerializeDate
 - [ ] Fill base migrations
   - [ ] users
