@@ -63,9 +63,9 @@ DEVELOPING
 ## TODOs
 Total Tasks : `170`
 
-Completed Tasks : `69`
+Completed Tasks : `70`
 
-Progress : `40.58%`
+Progress : `41.17%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
@@ -136,7 +136,7 @@ Progress : `40.58%`
 - [x] Assign middleware on controllers
 - [ ] Fill base migrations
   - [x] users
-  - [ ] addresses
+  - [x] addresses
   - [ ] banks
   - [ ] accounts
   - [ ] products
