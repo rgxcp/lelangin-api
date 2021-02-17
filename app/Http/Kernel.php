@@ -66,6 +66,13 @@ class Kernel extends HttpKernel
         'owner' => \App\Http\Middleware\Owner::class,
     ];
 
+    /**
+     * The priority-sorted list of middleware.
+     *
+     * Forces non-global middleware to always be in the given order.
+     *
+     * @var string[]
+     */
     protected $middlewarePriority = [
         \Illuminate\Cookie\Middleware\EncryptCookies::class,
         \Illuminate\Session\Middleware\StartSession::class,
