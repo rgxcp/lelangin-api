@@ -64,9 +64,9 @@ DEVELOPING
 ## TODOs
 Total Tasks : `170`
 
-Completed Tasks : `85`
+Completed Tasks : `92`
 
-Progress : `50%`
+Progress : `54.11%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
@@ -157,7 +157,7 @@ Progress : `50%`
   - [ ] Owner
 - [ ] Fill base models
   - [ ] Account
-    - [ ] SoftDeletes trait
+    - [x] SoftDeletes trait
     - [ ] `$fillable` attributes
     - [ ] `$hidden` attributes
     - [ ] Events
@@ -165,7 +165,7 @@ Progress : `50%`
     - [ ] Accessors
     - [ ] Mutator
   - [ ] Address
-    - [ ] SoftDeletes trait
+    - [x] SoftDeletes trait
     - [ ] `$fillable` attributes
     - [ ] `$hidden` attributes
     - [ ] Events
@@ -173,7 +173,7 @@ Progress : `50%`
     - [ ] Accessors
     - [ ] Mutator
   - [ ] Bank
-    - [ ] SoftDeletes trait
+    - [x] SoftDeletes trait
     - [ ] `$fillable` attributes
     - [ ] `$hidden` attributes
     - [ ] Events
@@ -181,7 +181,7 @@ Progress : `50%`
     - [ ] Accessors
     - [ ] Mutator
   - [ ] Image
-    - [ ] SoftDeletes trait
+    - [x] SoftDeletes trait
     - [ ] `$fillable` attributes
     - [ ] `$hidden` attributes
     - [ ] Events
@@ -189,7 +189,7 @@ Progress : `50%`
     - [ ] Accessors
     - [ ] Mutator
   - [ ] Invoice
-    - [ ] SoftDeletes trait
+    - [x] SoftDeletes trait
     - [ ] `$fillable` attributes
     - [ ] `$hidden` attributes
     - [ ] Events
@@ -197,7 +197,7 @@ Progress : `50%`
     - [ ] Accessors
     - [ ] Mutator
   - [ ] Product
-    - [ ] SoftDeletes trait
+    - [x] SoftDeletes trait
     - [ ] `$fillable` attributes
     - [ ] `$hidden` attributes
     - [ ] Events
@@ -205,7 +205,7 @@ Progress : `50%`
     - [ ] Accessors
     - [ ] Mutator
   - [ ] User
-    - [ ] SoftDeletes trait
+    - [x] SoftDeletes trait
     - [ ] `$fillable` attributes
     - [ ] `$hidden` attributes
     - [ ] Events
