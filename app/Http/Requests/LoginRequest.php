@@ -2,19 +2,12 @@
 
 namespace App\Http\Requests;
 
+use App\Traits\FailedFormValidation;
 use Illuminate\Foundation\Http\FormRequest;
 
 class LoginRequest extends FormRequest
 {
-    /**
-     * Determine if the user is authorized to make this request.
-     *
-     * @return bool
-     */
-    public function authorize()
-    {
-        return false;
-    }
+    use FailedFormValidation;
 
     /**
      * Get the validation rules that apply to the request.
@@ -24,7 +17,20 @@ class LoginRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'username' => [
+                'bail',
+                'required',
+                'alpha_dash',
+                'max:20',
+                'exists:users,username'
+            ],
+            'password' => [
+                'bail',
+                'required',
+                'string',
+                'min:8',
+                'max:72'
+            ]
         ];
     }
 }
