@@ -63,9 +63,9 @@ DEVELOPING
 ## TODOs
 Total Tasks : `170`
 
-Completed Tasks : `83`
+Completed Tasks : `85`
 
-Progress : `48.82%`
+Progress : `50%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
@@ -142,7 +142,7 @@ Progress : `48.82%`
   - [x] products
   - [x] images
   - [x] invoices
-- [ ] Fill base requests
+- [x] Fill base requests
   - [x] LoginRequest
   - [x] RegisterRequest
   - [x] StoreAccountRequest
@@ -150,7 +150,7 @@ Progress : `48.82%`
   - [x] StoreProductRequest
   - [x] UpdateAccountRequest
   - [x] UpdateAddressRequest
-  - [ ] UpdateProductRequest
+  - [x] UpdateProductRequest
 - [ ] Fill base middleware
   - [x] JSONHeader
   - [ ] Owner
