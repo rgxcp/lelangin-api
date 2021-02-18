@@ -2,19 +2,12 @@
 
 namespace App\Http\Requests;
 
+use App\Traits\FailedFormValidation;
 use Illuminate\Foundation\Http\FormRequest;
 
 class RegisterRequest extends FormRequest
 {
-    /**
-     * Determine if the user is authorized to make this request.
-     *
-     * @return bool
-     */
-    public function authorize()
-    {
-        return false;
-    }
+    use FailedFormValidation;
 
     /**
      * Get the validation rules that apply to the request.
@@ -24,7 +17,36 @@ class RegisterRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'full_name' => [
+                'bail',
+                'required',
+                'string',
+                'max:30'
+            ],
+            'username' => [
+                'bail',
+                'required',
+                'alpha_dash',
+                'max:20',
+                'unique:users,username'
+            ],
+            'email' => [
+                'bail',
+                'required',
+                'email',
+                'max:30',
+                'unique:users,email'
+            ],
+            'password' => [
+                'bail',
+                'required',
+                'string',
+                'min:8',
+                'max:72',
+                'different:full_name',
+                'different:username',
+                'different:email'
+            ]
         ];
     }
 }
