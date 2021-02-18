@@ -2,19 +2,12 @@
 
 namespace App\Http\Requests;
 
+use App\Traits\FailedFormValidation;
 use Illuminate\Foundation\Http\FormRequest;
 
 class StoreAddressRequest extends FormRequest
 {
-    /**
-     * Determine if the user is authorized to make this request.
-     *
-     * @return bool
-     */
-    public function authorize()
-    {
-        return false;
-    }
+    use FailedFormValidation;
 
     /**
      * Get the validation rules that apply to the request.
@@ -24,7 +17,45 @@ class StoreAddressRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'label' => [
+                'bail',
+                'required',
+                'string',
+                'max:20'
+            ],
+            'recipient' => [
+                'bail',
+                'required',
+                'string',
+                'max:30'
+            ],
+            'detail' => [
+                'bail',
+                'required',
+                'string',
+                'max:150'
+            ],
+            'phone_number' => [
+                'bail',
+                'required',
+                'string',
+                'max:12'
+            ]
         ];
+    }
+
+    /**
+     * Configure the validator instance.
+     *
+     * @param  \Illuminate\Validation\Validator  $validator
+     * @return void
+     */
+    public function withValidator($validator)
+    {
+        $validator->after(function () {
+            $this->merge([
+                'user_id' => $this->user()->id
+            ]);
+        });
     }
 }
