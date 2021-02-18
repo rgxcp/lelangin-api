@@ -114,7 +114,7 @@ Progress : `50%`
 - [x] Register middleware on kernel
 - [x] Configure middleware priority on kernel
 - [x] Create traits
-  - [x] FailedFormValidation
+  - [x] FailedValidation
   - [x] SerializeDate
 - [x] Create endpoints
   - [x] `GET` Show accounts
