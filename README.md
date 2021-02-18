@@ -16,15 +16,16 @@ DEVELOPING
 
 ## How to Use
 1. Clone this repository to your desired location.
-2. Copy `.env.example` file to `.env`.
-3. Generate application key `php artisan key:generate`.
-4. Generate storage symbolic link `php artisan storage:link`.
-5. Create database `lelangin_sandbox` and configure it on `.env` file.
-6. Run migration `php artisan migrate`.
-7. Run seeder `php artisan db:seed`.
-8. Run server `bash server.sh --start`.
-9. Fire-up Postman.
-10. Do-what-you-want-with-it!
+2. Install dependencies `composer install`.
+3. Copy `.env.example` file to `.env`.
+4. Generate application key `php artisan key:generate`.
+5. Generate storage symbolic link `php artisan storage:link`.
+6. Create database `lelangin_sandbox` and configure it on `.env` file.
+7. Run migration `php artisan migrate`.
+8. Run seeder `php artisan db:seed`.
+9. Run server `bash server.sh --start`.
+10. Fire-up Postman.
+11. Do-what-you-want-with-it!
 
 ## Endpoints
 ### GET
