@@ -101,8 +101,6 @@ Progress : `44.70%`
 - [x] Create base middleware
   - [x] JSONHeader
   - [x] Owner
-- [x] Register middleware on kernel
-- [x] Configure middleware priority on kernel
 - [x] Create base requests
   - [x] LoginRequest
   - [x] RegisterRequest
@@ -112,6 +110,8 @@ Progress : `44.70%`
   - [x] UpdateAccountRequest
   - [x] UpdateAddressRequest
   - [x] UpdateProductRequest
+- [x] Register middleware on kernel
+- [x] Configure middleware priority on kernel
 - [x] Create traits
   - [x] FailedFormValidation
   - [x] SerializeDate
@@ -142,9 +142,6 @@ Progress : `44.70%`
   - [x] products
   - [x] images
   - [x] invoices
-- [ ] Fill base middleware
-  - [x] JSONHeader
-  - [ ] Owner
 - [ ] Fill base requests
   - [ ] LoginRequest
   - [ ] RegisterRequest
@@ -154,6 +151,9 @@ Progress : `44.70%`
   - [ ] UpdateAccountRequest
   - [ ] UpdateAddressRequest
   - [ ] UpdateProductRequest
+- [ ] Fill base middleware
+  - [x] JSONHeader
+  - [ ] Owner
 - [ ] Fill base models
   - [ ] Account
     - [ ] SoftDeletes trait
