@@ -2,12 +2,12 @@
 
 namespace App\Http\Requests;
 
-use App\Traits\FailedFormValidation;
+use App\Traits\FailedValidation;
 use Illuminate\Foundation\Http\FormRequest;
 
 class UpdateProductRequest extends FormRequest
 {
-    use FailedFormValidation;
+    use FailedValidation;
 
     /**
      * Get the validation rules that apply to the request.
