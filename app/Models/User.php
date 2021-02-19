@@ -54,6 +54,12 @@ class User extends Authenticatable
         'profile_picture'
     ];
 
+    // Relationships
+    public function accounts()
+    {
+        return $this->hasMany(Account::class);
+    }
+
     // Accessors
     public function getProfilePictureAttribute()
     {

@@ -38,19 +38,4 @@ class StoreAccountRequest extends FormRequest
             ]
         ];
     }
-
-    /**
-     * Configure the validator instance.
-     *
-     * @param  \Illuminate\Validation\Validator  $validator
-     * @return void
-     */
-    public function withValidator($validator)
-    {
-        $validator->after(function () {
-            $this->merge([
-                'user_id' => $this->user()->id
-            ]);
-        });
-    }
 }

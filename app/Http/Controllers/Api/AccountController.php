@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreAccountRequest;
 use App\Models\Account;
 use Illuminate\Http\Request;
 
@@ -33,12 +34,20 @@ class AccountController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\StoreAccountRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreAccountRequest $request)
     {
-        //
+        $account = $request
+            ->user()
+            ->accounts()
+            ->create($request->all());
+
+        return response()->json([
+            'status' => 'Success',
+            'result' => $account->load('bank')
+        ], 201);
     }
 
     /**

@@ -21,4 +21,10 @@ class Account extends Model
         'holder',
         'number'
     ];
+
+    // Relationships
+    public function bank()
+    {
+        return $this->belongsTo(Bank::class);
+    }
 }
