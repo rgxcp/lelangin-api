@@ -65,6 +65,21 @@ class User extends Authenticatable
         return $this->hasMany(Address::class);
     }
 
+    public function sellerInvoices()
+    {
+        return $this->hasMany(Invoice::class, 'seller');
+    }
+
+    public function buyerInvoices()
+    {
+        return $this->hasMany(Invoice::class, 'buyer');
+    }
+
+    public function products()
+    {
+        return $this->hasMany(Product::class);
+    }
+
     // Accessors
     public function getProfilePictureAttribute()
     {
