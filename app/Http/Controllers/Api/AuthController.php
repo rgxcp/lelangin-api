@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\RegisterRequest;
+use App\Models\User;
 
 class AuthController extends Controller
 {
@@ -16,9 +18,16 @@ class AuthController extends Controller
         $this->middleware('json.header');
     }
 
-    public function register()
+    public function register(RegisterRequest $request)
     {
-        //
+        $user = User::create($request->except('device'));
+
+        return response()->json([
+            'status' => 'Success',
+            'result' => $user
+                ->append('token')
+                ->makeVisible('email')
+        ], 201);
     }
 
     public function login()
