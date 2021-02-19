@@ -9,4 +9,17 @@ use Illuminate\Database\Eloquent\Model;
 class Address extends Model
 {
     use HasFactory, SerializeDate;
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'user_id',
+        'label',
+        'recipient',
+        'detail',
+        'phone_number'
+    ];
 }

@@ -64,9 +64,9 @@ DEVELOPING
 ## TODOs
 Total Tasks : `170`
 
-Completed Tasks : `92`
+Completed Tasks : `99`
 
-Progress : `54.11%`
+Progress : `58.23%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
@@ -158,7 +158,7 @@ Progress : `54.11%`
 - [ ] Fill base models
   - [ ] Account
     - [x] Traits
-    - [ ] `$fillable` attributes
+    - [x] `$fillable` attributes
     - [ ] `$hidden` attributes
     - [ ] Events
     - [ ] Relationships
@@ -166,7 +166,7 @@ Progress : `54.11%`
     - [ ] Mutator
   - [ ] Address
     - [x] Traits
-    - [ ] `$fillable` attributes
+    - [x] `$fillable` attributes
     - [ ] `$hidden` attributes
     - [ ] Events
     - [ ] Relationships
@@ -174,7 +174,7 @@ Progress : `54.11%`
     - [ ] Mutator
   - [ ] Bank
     - [x] Traits
-    - [ ] `$fillable` attributes
+    - [x] `$fillable` attributes
     - [ ] `$hidden` attributes
     - [ ] Events
     - [ ] Relationships
@@ -182,7 +182,7 @@ Progress : `54.11%`
     - [ ] Mutator
   - [ ] Image
     - [x] Traits
-    - [ ] `$fillable` attributes
+    - [x] `$fillable` attributes
     - [ ] `$hidden` attributes
     - [ ] Events
     - [ ] Relationships
@@ -190,7 +190,7 @@ Progress : `54.11%`
     - [ ] Mutator
   - [ ] Invoice
     - [x] Traits
-    - [ ] `$fillable` attributes
+    - [x] `$fillable` attributes
     - [ ] `$hidden` attributes
     - [ ] Events
     - [ ] Relationships
@@ -198,7 +198,7 @@ Progress : `54.11%`
     - [ ] Mutator
   - [ ] Product
     - [x] Traits
-    - [ ] `$fillable` attributes
+    - [x] `$fillable` attributes
     - [ ] `$hidden` attributes
     - [ ] Events
     - [ ] Relationships
@@ -206,7 +206,7 @@ Progress : `54.11%`
     - [ ] Mutator
   - [ ] User
     - [x] Traits
-    - [ ] `$fillable` attributes
+    - [x] `$fillable` attributes
     - [ ] `$hidden` attributes
     - [ ] Events
     - [ ] Relationships
