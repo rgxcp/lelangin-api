@@ -16,6 +16,17 @@ class Owner
      */
     public function handle(Request $request, Closure $next)
     {
+        $model = $request->route()->parameterNames[0];
+
+        $owner = $request->$model->user_id === $request->user()->id;
+
+        if (!$owner) {
+            return response()->json([
+                'status' => 'Failed',
+                'message' => 'Forbidden'
+            ], 403);
+        }
+
         return $next($request);
     }
 }
