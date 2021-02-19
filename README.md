@@ -64,9 +64,9 @@ DEVELOPING
 ## TODOs
 Total Tasks : `170`
 
-Completed Tasks : `99`
+Completed Tasks : `106`
 
-Progress : `58.23%`
+Progress : `62.35%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
@@ -159,7 +159,7 @@ Progress : `58.23%`
   - [ ] Account
     - [x] Traits
     - [x] `$fillable` attributes
-    - [ ] `$hidden` attributes
+    - [x] `$hidden` attributes
     - [ ] Events
     - [ ] Relationships
     - [ ] Accessors
@@ -167,7 +167,7 @@ Progress : `58.23%`
   - [ ] Address
     - [x] Traits
     - [x] `$fillable` attributes
-    - [ ] `$hidden` attributes
+    - [x] `$hidden` attributes
     - [ ] Events
     - [ ] Relationships
     - [ ] Accessors
@@ -175,7 +175,7 @@ Progress : `58.23%`
   - [ ] Bank
     - [x] Traits
     - [x] `$fillable` attributes
-    - [ ] `$hidden` attributes
+    - [x] `$hidden` attributes
     - [ ] Events
     - [ ] Relationships
     - [ ] Accessors
@@ -183,7 +183,7 @@ Progress : `58.23%`
   - [ ] Image
     - [x] Traits
     - [x] `$fillable` attributes
-    - [ ] `$hidden` attributes
+    - [x] `$hidden` attributes
     - [ ] Events
     - [ ] Relationships
     - [ ] Accessors
@@ -191,7 +191,7 @@ Progress : `58.23%`
   - [ ] Invoice
     - [x] Traits
     - [x] `$fillable` attributes
-    - [ ] `$hidden` attributes
+    - [x] `$hidden` attributes
     - [ ] Events
     - [ ] Relationships
     - [ ] Accessors
@@ -199,7 +199,7 @@ Progress : `58.23%`
   - [ ] Product
     - [x] Traits
     - [x] `$fillable` attributes
-    - [ ] `$hidden` attributes
+    - [x] `$hidden` attributes
     - [ ] Events
     - [ ] Relationships
     - [ ] Accessors
@@ -207,7 +207,7 @@ Progress : `58.23%`
   - [ ] User
     - [x] Traits
     - [x] `$fillable` attributes
-    - [ ] `$hidden` attributes
+    - [x] `$hidden` attributes
     - [ ] Events
     - [ ] Relationships
     - [ ] Accessors
