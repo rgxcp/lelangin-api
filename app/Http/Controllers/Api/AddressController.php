@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreAddressRequest;
 use App\Http\Requests\UpdateAddressRequest;
 use App\Models\Address;
+use Illuminate\Http\Request;
 
 class AddressController extends Controller
 {
@@ -24,11 +25,19 @@ class AddressController extends Controller
     /**
      * Display a listing of the resource.
      *
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        return response()->json([
+            'status' => 'Success',
+            'result' => $request
+                ->user()
+                ->addresses()
+                ->orderBy($request->order_by ?? 'label', $request->direction ?? 'asc')
+                ->paginate($request->paginate ?? 30)
+        ]);
     }
 
     /**
