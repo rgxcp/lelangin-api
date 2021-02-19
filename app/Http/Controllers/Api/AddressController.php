@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreAddressRequest;
 use App\Models\Address;
 use Illuminate\Http\Request;
 
@@ -33,12 +34,20 @@ class AddressController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\StoreAddressRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreAddressRequest $request)
     {
-        //
+        $address = $request
+            ->user()
+            ->addresses()
+            ->create($request->all());
+
+        return response()->json([
+            'status' => 'Success',
+            'result' => $address
+        ], 201);
     }
 
     /**

@@ -60,6 +60,11 @@ class User extends Authenticatable
         return $this->hasMany(Account::class);
     }
 
+    public function addresses()
+    {
+        return $this->hasMany(Address::class);
+    }
+
     // Accessors
     public function getProfilePictureAttribute()
     {
