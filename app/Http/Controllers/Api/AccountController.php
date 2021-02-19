@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreAccountRequest;
 use App\Http\Requests\UpdateAccountRequest;
 use App\Models\Account;
+use Illuminate\Http\Request;
 
 class AccountController extends Controller
 {
@@ -24,11 +25,20 @@ class AccountController extends Controller
     /**
      * Display a listing of the resource.
      *
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        return response()->json([
+            'status' => 'Success',
+            'result' => $request
+                ->user()
+                ->accounts()
+                ->with('bank')
+                ->orderBy($request->order_by ?? 'holder', $request->direction ?? 'asc')
+                ->paginate($request->paginate ?? 30)
+        ]);
     }
 
     /**
