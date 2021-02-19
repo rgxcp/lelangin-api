@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\LoginRequest;
 use App\Http\Requests\RegisterRequest;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
@@ -30,8 +32,21 @@ class AuthController extends Controller
         ], 201);
     }
 
-    public function login()
+    public function login(LoginRequest $request)
     {
-        //
+        if (!Auth::attempt($request->except('device'))) {
+            return response()->json([
+                'status' => 'Failed',
+                'message' => 'Unauthorized'
+            ], 401);
+        }
+
+        return response()->json([
+            'status' => 'Success',
+            'result' => $request
+                ->user()
+                ->append('token')
+                ->makeVisible('email')
+        ]);
     }
 }
