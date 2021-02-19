@@ -157,7 +157,7 @@ Progress : `54.11%`
   - [ ] Owner
 - [ ] Fill base models
   - [ ] Account
-    - [x] SoftDeletes trait
+    - [x] Traits
     - [ ] `$fillable` attributes
     - [ ] `$hidden` attributes
     - [ ] Events
@@ -165,7 +165,7 @@ Progress : `54.11%`
     - [ ] Accessors
     - [ ] Mutator
   - [ ] Address
-    - [x] SoftDeletes trait
+    - [x] Traits
     - [ ] `$fillable` attributes
     - [ ] `$hidden` attributes
     - [ ] Events
@@ -173,7 +173,7 @@ Progress : `54.11%`
     - [ ] Accessors
     - [ ] Mutator
   - [ ] Bank
-    - [x] SoftDeletes trait
+    - [x] Traits
     - [ ] `$fillable` attributes
     - [ ] `$hidden` attributes
     - [ ] Events
@@ -181,7 +181,7 @@ Progress : `54.11%`
     - [ ] Accessors
     - [ ] Mutator
   - [ ] Image
-    - [x] SoftDeletes trait
+    - [x] Traits
     - [ ] `$fillable` attributes
     - [ ] `$hidden` attributes
     - [ ] Events
@@ -189,7 +189,7 @@ Progress : `54.11%`
     - [ ] Accessors
     - [ ] Mutator
   - [ ] Invoice
-    - [x] SoftDeletes trait
+    - [x] Traits
     - [ ] `$fillable` attributes
     - [ ] `$hidden` attributes
     - [ ] Events
@@ -197,7 +197,7 @@ Progress : `54.11%`
     - [ ] Accessors
     - [ ] Mutator
   - [ ] Product
-    - [x] SoftDeletes trait
+    - [x] Traits
     - [ ] `$fillable` attributes
     - [ ] `$hidden` attributes
     - [ ] Events
@@ -205,7 +205,7 @@ Progress : `54.11%`
     - [ ] Accessors
     - [ ] Mutator
   - [ ] User
-    - [x] SoftDeletes trait
+    - [x] Traits
     - [ ] `$fillable` attributes
     - [ ] `$hidden` attributes
     - [ ] Events
