@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreAccountRequest;
+use App\Http\Requests\UpdateAccountRequest;
 use App\Models\Account;
-use Illuminate\Http\Request;
 
 class AccountController extends Controller
 {
@@ -53,12 +53,17 @@ class AccountController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\UpdateAccountRequest  $request
      * @param  \App\Models\Account  $account
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Account $account)
+    public function update(UpdateAccountRequest $request, Account $account)
     {
-        //
+        $account->update($request->all());
+
+        return response()->json([
+            'status' => 'Success',
+            'result' => $account->load('bank')
+        ]);
     }
 }
