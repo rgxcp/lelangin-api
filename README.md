@@ -62,11 +62,11 @@ DEVELOPING
 | `api/v1/products/{product}` | Delete product |
 
 ## TODOs
-Total Tasks : `170`
+Total Tasks : `169`
 
 Completed Tasks : `121`
 
-Progress : `71.17%`
+Progress : `71.59%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
@@ -102,6 +102,8 @@ Progress : `71.17%`
 - [x] Create base middleware
   - [x] JSONHeader
   - [x] Owner
+- [x] Register middleware on kernel
+- [x] Configure middleware priority on kernel
 - [x] Create base requests
   - [x] LoginRequest
   - [x] RegisterRequest
@@ -111,8 +113,9 @@ Progress : `71.17%`
   - [x] UpdateAccountRequest
   - [x] UpdateAddressRequest
   - [x] UpdateProductRequest
-- [x] Register middleware on kernel
-- [x] Configure middleware priority on kernel
+- [ ] Create base observers
+  - [ ] ProductObserver
+- [ ] Register observers on event service provider
 - [x] Create traits
   - [x] FailedValidation
   - [x] SerializeDate
@@ -160,7 +163,6 @@ Progress : `71.17%`
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
-    - [ ] Events
     - [ ] Relationships
     - [ ] Accessors
     - [ ] Mutator
@@ -168,7 +170,6 @@ Progress : `71.17%`
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
-    - [ ] Events
     - [ ] Relationships
     - [ ] Accessors
     - [ ] Mutator
@@ -176,7 +177,6 @@ Progress : `71.17%`
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
-    - [ ] Events
     - [ ] Relationships
     - [ ] Accessors
     - [ ] Mutator
@@ -184,7 +184,6 @@ Progress : `71.17%`
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
-    - [ ] Events
     - [ ] Relationships
     - [ ] Accessors
     - [ ] Mutator
@@ -192,7 +191,6 @@ Progress : `71.17%`
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
-    - [ ] Events
     - [ ] Relationships
     - [ ] Accessors
     - [ ] Mutator
@@ -200,7 +198,6 @@ Progress : `71.17%`
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
-    - [ ] Events
     - [ ] Relationships
     - [ ] Accessors
     - [ ] Mutator
@@ -208,7 +205,6 @@ Progress : `71.17%`
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
-    - [ ] Events
     - [ ] Relationships
     - [ ] Accessors
     - [ ] Mutator
@@ -237,4 +233,7 @@ Progress : `71.17%`
     - [x] `show()`
   - [ ] UserProductController
     - [ ] `index()`
+- [ ] Fill base observers
+  - [ ] ProductObserver
+    - [ ] `deleted()`
 - [ ] Translate English locale to Indonesian
