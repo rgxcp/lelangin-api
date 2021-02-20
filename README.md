@@ -64,9 +64,9 @@ DEVELOPING
 ## TODOs
 Total Tasks : `169`
 
-Completed Tasks : `123`
+Completed Tasks : `124`
 
-Progress : `72.78%`
+Progress : `73.37%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
@@ -115,7 +115,7 @@ Progress : `72.78%`
   - [x] UpdateProductRequest
 - [x] Create base observers
   - [x] ProductObserver
-- [ ] Register observers on event service provider
+- [x] Register observers on event service provider
 - [x] Create traits
   - [x] FailedValidation
   - [x] SerializeDate
