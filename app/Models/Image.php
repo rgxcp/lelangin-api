@@ -20,4 +20,10 @@ class Image extends Model
         'product_id',
         'path'
     ];
+
+    // Accessors
+    public function getPathAttribute($value)
+    {
+        return asset('storage/' . $value);
+    }
 }

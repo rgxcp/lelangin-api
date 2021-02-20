@@ -4,6 +4,7 @@ namespace App\Http\Requests;
 
 use App\Traits\FailedValidation;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class StoreProductRequest extends FormRequest
 {
@@ -21,7 +22,9 @@ class StoreProductRequest extends FormRequest
                 'bail',
                 'required',
                 'integer',
-                'exists:accounts,id'
+                Rule::exists('accounts', 'id')->where(function ($query) {
+                    return $query->where('user_id', $this->user()->id);
+                })
             ],
             'name' => [
                 'bail',
@@ -56,9 +59,7 @@ class StoreProductRequest extends FormRequest
                 'bail',
                 'required',
                 'integer',
-                'gte:1000',
-                'exclude_if:buyout_price,null',
-                'lt:buyout_price'
+                'gte:1000'
             ],
             'buyout' => [
                 'bail',
@@ -67,9 +68,12 @@ class StoreProductRequest extends FormRequest
             ],
             'buyout_price' => [
                 'bail',
+                'exclude_if:buyout,false,0,null',
                 'filled',
                 'required_if:buyout,true,1',
-                'integer'
+                'integer',
+                'gt:bid_started_at',
+                'gt:bid_multiplied_by'
             ],
             'images' => [
                 'bail',
@@ -96,9 +100,9 @@ class StoreProductRequest extends FormRequest
     public function withValidator($validator)
     {
         $validator->after(function () {
-            $this->merge([
-                'user_id' => $this->user()->id
-            ]);
+            if ($this->buyout_price && $this->buyout == false) {
+                $this->offsetUnset('buyout_price');
+            }
         });
     }
 }

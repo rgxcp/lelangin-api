@@ -64,9 +64,9 @@ DEVELOPING
 ## TODOs
 Total Tasks : `170`
 
-Completed Tasks : `125`
+Completed Tasks : `126`
 
-Progress : `73.52%`
+Progress : `74.11%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
@@ -227,7 +227,7 @@ Progress : `73.52%`
   - [ ] ProductController
     - [ ] `index()`
     - [ ] `show()`
-    - [ ] `store()`
+    - [x] `store()`
     - [ ] `update()`
     - [ ] `destroy()`
   - [x] UserController

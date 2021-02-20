@@ -28,4 +28,19 @@ class Product extends Model
         'buyout',
         'buyout_price'
     ];
+
+    /**
+     * The attributes that should be cast.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'buyout' => 'boolean'
+    ];
+
+    // Relationships
+    public function images()
+    {
+        return $this->hasMany(Image::class);
+    }
 }
