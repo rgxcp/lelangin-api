@@ -62,11 +62,11 @@ DEVELOPING
 | `api/v1/products/{product}` | Delete product |
 
 ## TODOs
-Total Tasks : `169`
+Total Tasks : `170`
 
-Completed Tasks : `124`
+Completed Tasks : `123`
 
-Progress : `73.37%`
+Progress : `72.35%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
@@ -116,9 +116,10 @@ Progress : `73.37%`
 - [x] Create base observers
   - [x] ProductObserver
 - [x] Register observers on event service provider
-- [x] Create traits
+- [ ] Create traits
   - [x] FailedValidation
   - [x] SerializeDate
+  - [ ] UploadImage
 - [x] Create endpoints
   - [x] `GET` Show accounts
   - [x] `GET` Show addresses
