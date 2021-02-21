@@ -29,11 +29,23 @@ class ProductController extends Controller
     /**
      * Display a listing of the resource.
      *
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        $products = Product::where('auction_closed_at', '>', now())
+            ->with([
+                'user',
+                'images'
+            ])
+            ->orderBy($request->order_by ?? 'auction_opened_at', $request->direction ?? 'asc')
+            ->paginate($request->paginate ?? 30);
+
+        return response()->json([
+            'status' => 'Success',
+            'result' => $products
+        ]);
     }
 
     /**
