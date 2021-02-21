@@ -22,6 +22,7 @@ class ProductController extends Controller
         $this->middleware('json.header');
         $this->middleware('auth:sanctum');
         $this->middleware('owner')->only(['update, destroy']);
+        $this->middleware('prevent.product.modified')->only(['update, destroy']);
     }
 
     /**
