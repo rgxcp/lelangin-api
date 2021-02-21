@@ -14,6 +14,6 @@ class ProductObserver
      */
     public function deleted(Product $product)
     {
-        //
+        $product->images()->delete();
     }
 }

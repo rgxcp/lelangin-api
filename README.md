@@ -64,9 +64,9 @@ DEVELOPING
 ## TODOs
 Total Tasks : `170`
 
-Completed Tasks : `127`
+Completed Tasks : `130`
 
-Progress : `74.70%`
+Progress : `76.47%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
@@ -234,7 +234,7 @@ Progress : `74.70%`
     - [x] `show()`
   - [ ] UserProductController
     - [ ] `index()`
-- [ ] Fill base observers
-  - [ ] ProductObserver
-    - [ ] `deleted()`
+- [x] Fill base observers
+  - [x] ProductObserver
+    - [x] `deleted()`
 - [ ] Translate English locale to Indonesian
