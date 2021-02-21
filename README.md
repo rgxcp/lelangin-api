@@ -62,11 +62,11 @@ DEVELOPING
 | `api/v1/products/{product}` | Delete product |
 
 ## TODOs
-Total Tasks : `172`
+Total Tasks : `186`
 
 Completed Tasks : `133`
 
-Progress : `77.32%`
+Progress : `71.50%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
@@ -166,6 +166,8 @@ Progress : `77.32%`
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
+    - [ ] `$casts` attributes
+    - [ ] `$appends` attributes
     - [ ] Relationships
     - [ ] Accessors
     - [ ] Mutator
@@ -173,6 +175,8 @@ Progress : `77.32%`
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
+    - [ ] `$casts` attributes
+    - [ ] `$appends` attributes
     - [ ] Relationships
     - [ ] Accessors
     - [ ] Mutator
@@ -180,6 +184,8 @@ Progress : `77.32%`
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
+    - [ ] `$casts` attributes
+    - [ ] `$appends` attributes
     - [ ] Relationships
     - [ ] Accessors
     - [ ] Mutator
@@ -187,6 +193,8 @@ Progress : `77.32%`
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
+    - [ ] `$casts` attributes
+    - [ ] `$appends` attributes
     - [ ] Relationships
     - [ ] Accessors
     - [ ] Mutator
@@ -194,6 +202,8 @@ Progress : `77.32%`
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
+    - [ ] `$casts` attributes
+    - [ ] `$appends` attributes
     - [ ] Relationships
     - [ ] Accessors
     - [ ] Mutator
@@ -201,6 +211,8 @@ Progress : `77.32%`
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
+    - [ ] `$casts` attributes
+    - [ ] `$appends` attributes
     - [ ] Relationships
     - [ ] Accessors
     - [ ] Mutator
@@ -208,6 +220,8 @@ Progress : `77.32%`
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
+    - [ ] `$casts` attributes
+    - [ ] `$appends` attributes
     - [ ] Relationships
     - [ ] Accessors
     - [ ] Mutator
