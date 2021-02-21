@@ -64,9 +64,9 @@ DEVELOPING
 ## TODOs
 Total Tasks : `186`
 
-Completed Tasks : `134`
+Completed Tasks : `141`
 
-Progress : `72.04%`
+Progress : `75.80%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
@@ -166,7 +166,7 @@ Progress : `72.04%`
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
-    - [ ] `$casts` attributes
+    - [x] `$casts` attributes
     - [ ] `$appends` attributes
     - [ ] Relationships
     - [ ] Accessors
@@ -175,7 +175,7 @@ Progress : `72.04%`
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
-    - [ ] `$casts` attributes
+    - [x] `$casts` attributes
     - [ ] `$appends` attributes
     - [ ] Relationships
     - [ ] Accessors
@@ -184,7 +184,7 @@ Progress : `72.04%`
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
-    - [ ] `$casts` attributes
+    - [x] `$casts` attributes
     - [ ] `$appends` attributes
     - [ ] Relationships
     - [ ] Accessors
@@ -193,7 +193,7 @@ Progress : `72.04%`
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
-    - [ ] `$casts` attributes
+    - [x] `$casts` attributes
     - [ ] `$appends` attributes
     - [ ] Relationships
     - [ ] Accessors
@@ -202,7 +202,7 @@ Progress : `72.04%`
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
-    - [ ] `$casts` attributes
+    - [x] `$casts` attributes
     - [ ] `$appends` attributes
     - [ ] Relationships
     - [ ] Accessors
@@ -211,7 +211,7 @@ Progress : `72.04%`
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
-    - [ ] `$casts` attributes
+    - [x] `$casts` attributes
     - [ ] `$appends` attributes
     - [ ] Relationships
     - [ ] Accessors
@@ -220,7 +220,7 @@ Progress : `72.04%`
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
-    - [ ] `$casts` attributes
+    - [x] `$casts` attributes
     - [ ] `$appends` attributes
     - [ ] Relationships
     - [ ] Accessors

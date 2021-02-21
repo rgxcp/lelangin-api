@@ -24,4 +24,13 @@ class Invoice extends Model
         'winned_as_buyout',
         'winned_at_price'
     ];
+
+    /**
+     * The attributes that should be cast.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'winned_as_buyout' => 'boolean'
+    ];
 }
