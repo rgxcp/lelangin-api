@@ -7,6 +7,7 @@ use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
 use App\Models\Product;
 use App\Traits\UploadImage;
+use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
@@ -38,12 +39,20 @@ class ProductController extends Controller
     /**
      * Display the specified resource.
      *
+     * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show(Product $product)
+    public function show(Request $request, Product $product)
     {
-        //
+        $product->user_id === $request->user()->id
+            ? $product['user'] = $request->user()
+            : $product->load('user');
+
+        return response()->json([
+            'status' => 'Success',
+            'result' => $product->load('images')
+        ]);
     }
 
     /**

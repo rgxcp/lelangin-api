@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Traits\SerializeDate;
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -38,9 +39,57 @@ class Product extends Model
         'buyout' => 'boolean'
     ];
 
+    /**
+     * The accessors to append to the model's array form.
+     *
+     * @var array
+     */
+    protected $appends = [
+        'auction_status',
+        'auction_opened_at_timestamp',
+        'auction_closed_at_timestamp'
+    ];
+
     // Relationships
+    public function invoice()
+    {
+        return $this->hasOne(Invoice::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
     public function images()
     {
         return $this->hasMany(Image::class);
+    }
+
+    // Accessors
+    public function getAuctionStatusAttribute()
+    {
+        $now = now();
+
+        switch ($now) {
+            case $now < $this->auction_opened_at:
+                return 'Closed';
+                break;
+            case $now > $this->auction_closed_at:
+                return 'Ended';
+                break;
+            default:
+                return 'Opened';
+        }
+    }
+
+    public function getAuctionOpenedAtTimestampAttribute()
+    {
+        return Carbon::parse($this->auction_opened_at)->diffForHumans();
+    }
+
+    public function getAuctionClosedAtTimestampAttribute()
+    {
+        return Carbon::parse($this->auction_closed_at)->diffForHumans();
     }
 }
