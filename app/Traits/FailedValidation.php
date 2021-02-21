@@ -17,7 +17,7 @@ trait FailedValidation
      */
     protected function failedValidation(Validator $validator)
     {
-        if (request()->expectsJson()) {
+        if ($this->expectsJson()) {
             throw new HttpResponseException(
                 response()->json([
                     'status' => 'Failed',
