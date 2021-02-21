@@ -62,11 +62,11 @@ DEVELOPING
 | `api/v1/products/{product}` | Delete product |
 
 ## TODOs
-Total Tasks : `170`
+Total Tasks : `172`
 
-Completed Tasks : `131`
+Completed Tasks : `127`
 
-Progress : `77.05%`
+Progress : `73.83%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
@@ -99,10 +99,11 @@ Progress : `77.05%`
   - [x] ProductController
   - [x] UserController
   - [x] UserProductController
-- [x] Create base middleware
+- [ ] Create base middleware
   - [x] JSONHeader
+  - [ ] PreventProductModifiedWhenHasWinner
   - [x] Owner
-- [x] Register middleware on kernel
+- [ ] Register middleware on kernel
 - [x] Configure middleware priority on kernel
 - [x] Create base requests
   - [x] LoginRequest
@@ -138,7 +139,7 @@ Progress : `77.05%`
   - [x] `PUT` Update address
   - [x] `PUT` Update product
   - [x] `DELETE` Delete product
-- [x] Assign middleware on controllers
+- [ ] Assign middleware on controllers
 - [x] Fill base migrations
   - [x] users
   - [x] addresses
@@ -156,8 +157,9 @@ Progress : `77.05%`
   - [x] UpdateAccountRequest
   - [x] UpdateAddressRequest
   - [x] UpdateProductRequest
-- [x] Fill base middleware
+- [ ] Fill base middleware
   - [x] JSONHeader
+  - [ ] PreventProductModifiedWhenHasWinner
   - [x] Owner
 - [ ] Fill base models
   - [ ] Account
