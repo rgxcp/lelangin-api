@@ -16,6 +16,15 @@ class PreventProductModifiedWhenHasWinner
      */
     public function handle(Request $request, Closure $next)
     {
+        $hasWinner = $request->product->invoice()->exists();
+
+        if ($hasWinner) {
+            return response()->json([
+                'status' => 'Failed',
+                'message' => 'Forbidden'
+            ], 403);
+        }
+
         return $next($request);
     }
 }
