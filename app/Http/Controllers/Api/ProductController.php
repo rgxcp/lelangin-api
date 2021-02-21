@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreProductRequest;
+use App\Http\Requests\UpdateProductRequest;
 use App\Models\Product;
 use App\Traits\UploadImage;
-use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
@@ -73,13 +73,24 @@ class ProductController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\UpdateProductRequest  $request
      * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Product $product)
+    public function update(UpdateProductRequest $request, Product $product)
     {
-        //
+        $product->update($request->except('images'));
+
+        $product['user'] = $request->user();
+
+        if ($request->images) {
+            $product['images'] = $this->uploadImage($product, $request->images);
+        }
+
+        return response()->json([
+            'status' => 'Success',
+            'result' => $product
+        ]);
     }
 
     /**
