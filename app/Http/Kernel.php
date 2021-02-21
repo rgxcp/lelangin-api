@@ -63,6 +63,7 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'json.header' => \App\Http\Middleware\JSONHeader::class,
+        'prevent.product.modified' => \App\Http\Middleware\PreventProductModifiedWhenHasWinner::class,
         'owner' => \App\Http\Middleware\Owner::class,
     ];
 
