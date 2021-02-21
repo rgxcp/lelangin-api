@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
+use Illuminate\Http\Request;
 
 class UserProductController extends Controller
 {
@@ -20,10 +22,19 @@ class UserProductController extends Controller
     /**
      * Display a listing of the resource.
      *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request, User $user)
     {
-        //
+        return response()->json([
+            'status' => 'Success',
+            'result' => $user
+                ->products()
+                ->with('images')
+                ->orderBy($request->order_by ?? 'auction_opened_at', $request->direction ?? 'asc')
+                ->paginate($request->paginate ?? 30)
+        ]);
     }
 }
