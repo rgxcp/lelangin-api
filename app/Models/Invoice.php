@@ -33,4 +33,38 @@ class Invoice extends Model
     protected $casts = [
         'winned_as_buyout' => 'boolean'
     ];
+
+    /**
+     * The accessors to append to the model's array form.
+     *
+     * @var array
+     */
+    protected $appends = [
+        'as'
+    ];
+
+    // Scopes
+    public function scopeAsSeller($query)
+    {
+        return $query->where('seller', request()->user()->id);
+    }
+
+    public function scopeAsBuyer($query)
+    {
+        return $query->where('buyer', request()->user()->id);
+    }
+
+    // Relationships
+    public function product()
+    {
+        return $this->belongsTo(Product::class);
+    }
+
+    // Accessors
+    public function getAsAttribute()
+    {
+        return $this->seller === request()->user()->id
+            ? 'Seller'
+            : 'Buyer';
+    }
 }

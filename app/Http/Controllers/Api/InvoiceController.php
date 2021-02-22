@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Invoice;
+use Illuminate\Http\Request;
 
 class InvoiceController extends Controller
 {
@@ -22,11 +23,22 @@ class InvoiceController extends Controller
     /**
      * Display a listing of the resource.
      *
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        $invoices = Invoice::asSeller()
+            ->orWhere
+            ->asBuyer()
+            ->with('product:id,name')
+            ->orderBy($request->order_by ?? 'id', $request->direction ?? 'desc')
+            ->paginate($request->paginate ?? 30);
+
+        return response()->json([
+            'status' => 'Success',
+            'result' => $invoices
+        ]);
     }
 
     /**
