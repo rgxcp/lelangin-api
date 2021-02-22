@@ -33,7 +33,7 @@ class UserProductController extends Controller
             'result' => $user
                 ->products()
                 ->with('images')
-                ->orderBy($request->order_by ?? 'auction_opened_at', $request->direction ?? 'asc')
+                ->orderBy($request->order_by ?? 'id', $request->direction ?? 'desc')
                 ->paginate($request->paginate ?? 30)
         ]);
     }
