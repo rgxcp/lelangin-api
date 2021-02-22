@@ -38,7 +38,9 @@ class ProductController extends Controller
             ->doesntHave('invoice')
             ->with([
                 'user',
-                'images'
+                'images' => function ($query) {
+                    $query->take(1);
+                }
             ])
             ->orderBy($request->order_by ?? 'auction_opened_at', $request->direction ?? 'asc')
             ->paginate($request->paginate ?? 30);
