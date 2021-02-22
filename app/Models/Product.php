@@ -45,6 +45,8 @@ class Product extends Model
      * @var array
      */
     protected $appends = [
+        'my_product',
+        'has_winner',
         'auction_status',
         'auction_opened_at_timestamp',
         'auction_closed_at_timestamp'
@@ -73,6 +75,16 @@ class Product extends Model
     }
 
     // Accessors
+    public function getMyProductAttribute()
+    {
+        return $this->user_id === request()->user()->id;
+    }
+
+    public function getHasWinnerAttribute()
+    {
+        return $this->invoice()->exists();
+    }
+
     public function getAuctionStatusAttribute()
     {
         $now = now();
