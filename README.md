@@ -64,9 +64,9 @@ DEVELOPING
 ## TODOs
 Total Tasks : `193`
 
-Completed Tasks : `146`
+Completed Tasks : `192`
 
-Progress : `75.64%`
+Progress : `99.48%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
@@ -161,78 +161,78 @@ Progress : `75.64%`
   - [x] JSONHeader
   - [x] PreventProductModifiedWhenHasWinner
   - [x] Owner
-- [ ] Fill base models
-  - [ ] Account
+- [x] Fill base models
+  - [x] Account
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
     - [x] `$casts` attributes
-    - [ ] `$appends` attributes
-    - [ ] Scopes
-    - [ ] Relationships
-    - [ ] Accessors
-    - [ ] Mutator
-  - [ ] Address
+    - [x] `$appends` attributes
+    - [x] Scopes
+    - [x] Relationships
+    - [x] Accessors
+    - [x] Mutator
+  - [x] Address
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
     - [x] `$casts` attributes
-    - [ ] `$appends` attributes
-    - [ ] Scopes
-    - [ ] Relationships
-    - [ ] Accessors
-    - [ ] Mutator
-  - [ ] Bank
+    - [x] `$appends` attributes
+    - [x] Scopes
+    - [x] Relationships
+    - [x] Accessors
+    - [x] Mutator
+  - [x] Bank
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
     - [x] `$casts` attributes
-    - [ ] `$appends` attributes
-    - [ ] Scopes
-    - [ ] Relationships
-    - [ ] Accessors
-    - [ ] Mutator
-  - [ ] Image
+    - [x] `$appends` attributes
+    - [x] Scopes
+    - [x] Relationships
+    - [x] Accessors
+    - [x] Mutator
+  - [x] Image
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
     - [x] `$casts` attributes
-    - [ ] `$appends` attributes
-    - [ ] Scopes
-    - [ ] Relationships
-    - [ ] Accessors
-    - [ ] Mutator
-  - [ ] Invoice
+    - [x] `$appends` attributes
+    - [x] Scopes
+    - [x] Relationships
+    - [x] Accessors
+    - [x] Mutator
+  - [x] Invoice
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
     - [x] `$casts` attributes
-    - [ ] `$appends` attributes
-    - [ ] Scopes
-    - [ ] Relationships
-    - [ ] Accessors
-    - [ ] Mutator
-  - [ ] Product
+    - [x] `$appends` attributes
+    - [x] Scopes
+    - [x] Relationships
+    - [x] Accessors
+    - [x] Mutator
+  - [x] Product
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
     - [x] `$casts` attributes
-    - [ ] `$appends` attributes
-    - [ ] Scopes
-    - [ ] Relationships
-    - [ ] Accessors
-    - [ ] Mutator
-  - [ ] User
+    - [x] `$appends` attributes
+    - [x] Scopes
+    - [x] Relationships
+    - [x] Accessors
+    - [x] Mutator
+  - [x] User
     - [x] Traits
     - [x] `$fillable` attributes
     - [x] `$hidden` attributes
     - [x] `$casts` attributes
-    - [ ] `$appends` attributes
-    - [ ] Scopes
-    - [ ] Relationships
-    - [ ] Accessors
-    - [ ] Mutator
-- [ ] Fill base controllers
+    - [x] `$appends` attributes
+    - [x] Scopes
+    - [x] Relationships
+    - [x] Accessors
+    - [x] Mutator
+- [x] Fill base controllers
   - [x] AccountController
     - [x] `index()`
     - [x] `store()`
@@ -244,9 +244,9 @@ Progress : `75.64%`
   - [x] AuthController
     - [x] `register()`
     - [x] `login()`
-  - [ ] InvoiceController
+  - [x] InvoiceController
     - [x] `index()`
-    - [ ] `show()`
+    - [x] `show()`
   - [x] ProductController
     - [x] `index()`
     - [x] `show()`

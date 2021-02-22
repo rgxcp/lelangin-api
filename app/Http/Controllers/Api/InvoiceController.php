@@ -49,6 +49,17 @@ class InvoiceController extends Controller
      */
     public function show(Invoice $invoice)
     {
-        //
+        return response()->json([
+            'status' => 'Success',
+            'result' => $invoice->load([
+                'seller',
+                'buyer',
+                'address',
+                'product.account.bank',
+                'product.images' => function ($query) {
+                    $query->take(1);
+                }
+            ])
+        ]);
     }
 }

@@ -55,9 +55,24 @@ class Invoice extends Model
     }
 
     // Relationships
+    public function address()
+    {
+        return $this->belongsTo(Address::class);
+    }
+
     public function product()
     {
         return $this->belongsTo(Product::class);
+    }
+
+    public function seller()
+    {
+        return $this->belongsTo(User::class, 'seller');
+    }
+
+    public function buyer()
+    {
+        return $this->belongsTo(User::class, 'buyer');
     }
 
     // Accessors
