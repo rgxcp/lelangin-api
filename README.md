@@ -62,11 +62,11 @@ DEVELOPING
 | `api/v1/products/{product}` | Delete product |
 
 ## TODOs
-Total Tasks : `186`
+Total Tasks : `193`
 
 Completed Tasks : `145`
 
-Progress : `77.95%`
+Progress : `75.12%`
 
 - [x] Configure app `.env`
 - [x] Configure app filesystem driver
@@ -168,6 +168,7 @@ Progress : `77.95%`
     - [x] `$hidden` attributes
     - [x] `$casts` attributes
     - [ ] `$appends` attributes
+    - [ ] Scopes
     - [ ] Relationships
     - [ ] Accessors
     - [ ] Mutator
@@ -177,6 +178,7 @@ Progress : `77.95%`
     - [x] `$hidden` attributes
     - [x] `$casts` attributes
     - [ ] `$appends` attributes
+    - [ ] Scopes
     - [ ] Relationships
     - [ ] Accessors
     - [ ] Mutator
@@ -186,6 +188,7 @@ Progress : `77.95%`
     - [x] `$hidden` attributes
     - [x] `$casts` attributes
     - [ ] `$appends` attributes
+    - [ ] Scopes
     - [ ] Relationships
     - [ ] Accessors
     - [ ] Mutator
@@ -195,6 +198,7 @@ Progress : `77.95%`
     - [x] `$hidden` attributes
     - [x] `$casts` attributes
     - [ ] `$appends` attributes
+    - [ ] Scopes
     - [ ] Relationships
     - [ ] Accessors
     - [ ] Mutator
@@ -204,6 +208,7 @@ Progress : `77.95%`
     - [x] `$hidden` attributes
     - [x] `$casts` attributes
     - [ ] `$appends` attributes
+    - [ ] Scopes
     - [ ] Relationships
     - [ ] Accessors
     - [ ] Mutator
@@ -213,6 +218,7 @@ Progress : `77.95%`
     - [x] `$hidden` attributes
     - [x] `$casts` attributes
     - [ ] `$appends` attributes
+    - [ ] Scopes
     - [ ] Relationships
     - [ ] Accessors
     - [ ] Mutator
@@ -222,6 +228,7 @@ Progress : `77.95%`
     - [x] `$hidden` attributes
     - [x] `$casts` attributes
     - [ ] `$appends` attributes
+    - [ ] Scopes
     - [ ] Relationships
     - [ ] Accessors
     - [ ] Mutator
