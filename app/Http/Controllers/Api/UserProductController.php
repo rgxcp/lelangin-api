@@ -32,7 +32,9 @@ class UserProductController extends Controller
             'status' => 'Success',
             'result' => $user
                 ->products()
-                ->with('images')
+                ->with('images', function ($query) {
+                    $query->take(1);
+                })
                 ->orderBy($request->order_by ?? 'id', $request->direction ?? 'desc')
                 ->paginate($request->paginate ?? 30)
         ]);
