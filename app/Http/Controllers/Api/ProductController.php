@@ -34,7 +34,8 @@ class ProductController extends Controller
      */
     public function index(Request $request)
     {
-        $products = Product::where('auction_closed_at', '>', now())
+        $products = Product::auctionStatusNotEnded()
+            ->doesntHave('invoice')
             ->with([
                 'user',
                 'images'

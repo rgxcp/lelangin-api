@@ -50,6 +50,12 @@ class Product extends Model
         'auction_closed_at_timestamp'
     ];
 
+    // Scopes
+    public function scopeAuctionStatusNotEnded($query)
+    {
+        return $query->where('auction_closed_at', '>', now());
+    }
+
     // Relationships
     public function invoice()
     {
