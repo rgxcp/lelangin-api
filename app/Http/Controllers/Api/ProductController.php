@@ -60,7 +60,7 @@ class ProductController extends Controller
      */
     public function show(Request $request, Product $product)
     {
-        $product->user_id === $request->user()->id
+        $product->owner()
             ? $product['user'] = $request->user()
             : $product->load('user');
 
