@@ -20,7 +20,7 @@ DEVELOPING
 3. Copy `.env.example` file to `.env`.
 4. Generate application key `php artisan key:generate`.
 5. Generate storage symbolic link `php artisan storage:link`.
-6. Create database `lelangin_sandbox` and configure it on `.env` file.
+6. Create database `lelangin`.
 7. Run migration `php artisan migrate`.
 8. Run seeder `php artisan db:seed`.
 9. Run server `bash server.sh --start`.
