@@ -45,6 +45,11 @@ class User extends Authenticatable
         'profile_picture'
     ];
 
+    public function self()
+    {
+        return $this->id === request()->user()->id;
+    }
+
     // Relationships
     public function accounts()
     {

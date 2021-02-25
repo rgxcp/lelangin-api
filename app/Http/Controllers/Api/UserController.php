@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
-use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
@@ -22,15 +21,14 @@ class UserController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function show(Request $request, User $user)
+    public function show(User $user)
     {
         return response()->json([
             'status' => 'Success',
-            'result' => $user->id === $request->user()->id
+            'result' => $user->self()
                 ? $user
                 ->makeVisible('email')
                 ->loadCount([
