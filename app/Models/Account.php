@@ -22,6 +22,11 @@ class Account extends Model
         'number'
     ];
 
+    public function owner()
+    {
+        return $this->user_id === request()->user()->id;
+    }
+
     // Relationships
     public function bank()
     {

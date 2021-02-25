@@ -52,6 +52,11 @@ class Product extends Model
         'auction_closed_at_timestamp'
     ];
 
+    public function owner()
+    {
+        return $this->user_id === request()->user()->id;
+    }
+
     // Scopes
     public function scopeAuctionStatusNotEnded($query)
     {

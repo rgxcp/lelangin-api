@@ -43,6 +43,12 @@ class Invoice extends Model
         'as'
     ];
 
+    public function owner()
+    {
+        return $this->seller === request()->user()->id
+            || $this->buyer === request()->user()->id;
+    }
+
     // Scopes
     public function scopeAsSeller($query)
     {

@@ -18,12 +18,7 @@ class Owner
     {
         $model = $request->route()->parameterNames[0];
 
-        $owner = $model === 'invoice'
-            ? $request->$model->seller === $request->user()->id
-            || $request->$model->buyer === $request->user()->id
-            : $request->$model->user_id === $request->user()->id;
-
-        if (!$owner) {
+        if (!$request->$model->owner()) {
             return response()->json([
                 'status' => 'Failed',
                 'message' => 'Forbidden'

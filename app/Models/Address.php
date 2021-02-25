@@ -22,4 +22,9 @@ class Address extends Model
         'detail',
         'phone_number'
     ];
+
+    public function owner()
+    {
+        return $this->user_id === request()->user()->id;
+    }
 }
