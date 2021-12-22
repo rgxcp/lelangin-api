@@ -1,7 +1,5 @@
-# 💵 PHP - Laravel - Lelangin API
-**EN**: API for Lelangin app.
-
-**ID**: API untuk aplikasi Lelangin.
+# 💵 Lelangin API
+API for Lelangin app.
 
 ## Status
 DEVELOPING
